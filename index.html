@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Wisuda Telkom University</title>
+
+  <!-- ✅ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- ✅ TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ✅ Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #E41E26, #B71C1C, #F4F4F4);
+      color: #333;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎉 Confetti -->
+  <canvas id="confetti-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-50"></canvas>
+
+  <!-- 🏫 Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center text-white px-4">
+    <h1 id="typed" class="text-4xl md:text-6xl font-bold mb-4"></h1>
+    <p class="text-lg md:text-xl mb-8">Selamat atas kelulusanmu di Telkom University 🎓</p>
+    
+    <!-- 🧑‍🎓 Foto Wisudawan -->
+    <img src="ali.jpg" 
+         alt="Foto Wisudawan" 
+         class="w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-white shadow-xl mb-4 object-cover"
+         data-aos="zoom-in">
+    
+    <!-- 🏷️ Nama Wisudawan -->
+    <h2 class="text-3xl font-semibold" data-aos="fade-up">Ali Akbar Velayati Putra Arifin</h2>
+  </section>
+
+  <!-- 🖼️ Galeri Wisuda (Swiper Slider) -->
+  <section class="py-16 bg-gray-100">
+    <h2 class="text-center text-3xl font-bold mb-10">Galeri Kenangan</h2>
+    <div class="swiper w-11/12 md:w-3/4 mx-auto" data-aos="fade-up">
+      <div class="swiper-wrapper">
+
+        <!-- Gambar 1920x1080 -->
+        <div class="swiper-slide">
+          <img src="kenangan (1).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="kenangan (2).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="kenangan (3).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="kenangan (4).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="kenangan (5).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="kenangan (6).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="kenangan (7).jpg"
+               class="rounded-xl w-full h-auto object-cover" alt="">
+        </div>
+
+      </div>
+
+      <!-- Navigasi Swiper -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev text-red-600"></div>
+      <div class="swiper-button-next text-red-600"></div>
+    </div>
+  </section>
+
+  <!-- 💌 Ucapan Personal -->
+  <section class="py-20 bg-white">
+    <h2 class="text-center text-3xl font-bold mb-10 text-gray-800">Pesan dari Teman & Keluarga</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-16" data-aos="fade-up">
+      
+      <!-- Card Contoh -->
+      <div class="bg-gray-50 shadow-lg rounded-2xl p-6 hover:scale-105 transition">
+        <div class="flex items-center mb-4">
+          <img src="fariz.jpg" class="w-14 h-14 rounded-full mr-4" alt="Foto Pengirim">
+          <div>
+            <h3 class="font-semibold text-lg">Fariz sepanjang</h3>
+            <p class="text-sm text-gray-500">Kadang EXP kadang Tank</p>
+          </div>
+        </div>
+        <p>Selamat wisuda, semoga ilmunya bermanfaat, sukses dimulai dari s🎓✨</p>
+      </div>
+
+      <div class="bg-gray-50 shadow-lg rounded-2xl p-6 hover:scale-105 transition">
+        <div class="flex items-center mb-4">
+          <img src="dwi.jpg" class="w-14 h-14 rounded-full mr-4" alt="Foto Pengirim">
+          <div>
+            <h3 class="font-semibold text-lg">Dwi arkal</h3>
+            <p class="text-sm text-gray-500">Coach IG</p>
+          </div>
+        </div>
+        <p>Ajari sangar, koyok awkmu pok o li, capek banget jadi pengangguran aku 😔</p>
+      </div>
+
+      <div class="bg-gray-50 shadow-lg rounded-2xl p-6 hover:scale-105 transition">
+        <div class="flex items-center mb-4">
+          <img src="vicky.jpg" class="w-14 h-14 rounded-full mr-4" alt="Foto Pengirim">
+          <div>
+            <h3 class="font-semibold text-lg">Vicky sadboy</h3>
+            <p class="text-sm text-gray-500">All role (katanya)</p>
+          </div>
+        </div>
+        <p>Selamat atas kelulusanmu, Ali!<br>Hari ini bukan akhir perjalanan, tapi awal dari petualangan baru menuju masa depan yang lebih gemilang. Terus semangat berkarya dan jangan pernah berhenti belajar! 🔥</p>
+      </div>
+
+      <div class="bg-gray-50 shadow-lg rounded-2xl p-6 hover:scale-105 transition">
+        <div class="flex items-center mb-4">
+          <img src="septa.jpg" class="w-14 h-14 rounded-full mr-4" alt="Foto Pengirim">
+          <div>
+            <h3 class="font-semibold text-lg">Septa kejambon</h3>
+            <p class="text-sm text-gray-500">Goldliner IG</p>
+          </div>
+        </div>
+        <p>Congrats yo li✨, semoga ndang menemukan jalan hidup yang cocok dan eksponensial gae awakmu, ben ndang isok counter attack jokes-ku dan jokes-nya arek-arek biasane, sedang kutunggu moment counter attack tersebut⏰</p>
+      </div>
+
+      <div class="bg-gray-50 shadow-lg rounded-2xl p-6 hover:scale-105 transition">
+        <div class="flex items-center mb-4">
+          <img src="zakaria.jpg" class="w-14 h-14 rounded-full mr-4" alt="Foto Pengirim">
+          <div>
+            <h3 class="font-semibold text-lg">Zakaria Arplem</h3>
+            <p class="text-sm text-gray-500">Roamer langganan MVP</p>
+          </div>
+        </div>
+        <p>Kelazz rek magang nak jakarta, nangis aku sumpah li ndelok awkmu saiki, kek wow aja gitu, Jujurly insecure aku wkwkw...!!! tapi terlepas dari itu semua, dirimu layak mendapatkan itu seh, apa pun itu yang terbaik untukmu, Kalok udah sukses jangan lupa sama sahabat sahabatnya ya...🎓❤️✨</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🦶 Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2025 ADF Reborn | Sekali lagi selamat menempuh hidup baru 🎓</p>
+  </footer>
+
+  <!-- ✅ Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // 🎉 Confetti
+    const confettiCanvas = document.getElementById('confetti-canvas');
+    const confettiInstance = confetti.create(confettiCanvas, { resize: true });
+    confettiInstance({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+
+    // ⌨️ Typed.js
+    new Typed('#typed', {
+      strings: ["Selamat Wisuda!", "Perjalananmu baru saja dimulai.", "Bangga jadi bagian dari Telkom University ❤️"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: false
+    });
+
+    // 🎞️ AOS
+    AOS.init({ duration: 1000, once: true });
+
+    // 🖼️ Swiper.js
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
+  </script>
+</body>
+</html>
